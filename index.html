@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#111b17"><meta name="description" content="LeanTrack — your private, six-month fitness dashboard.">
+<title>LeanTrack | Your fitness journey</title><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="shell">
+  <aside class="sidebar">
+    <div class="brand"><div class="brand-icon">L<span>↗</span></div><div><strong>LeanTrack</strong><small>PERSONAL FITNESS</small></div></div>
+    <nav aria-label="Main navigation">
+      <button class="nav-link active" data-view="dashboard"><span>◫</span> Overview</button>
+      <button class="nav-link" data-view="workouts"><span>▣</span> Workouts</button>
+      <button class="nav-link" data-view="nutrition"><span>◉</span> Nutrition</button>
+      <button class="nav-link" data-view="progress"><span>↗</span> Progress</button>
+      <button class="nav-link" data-view="settings"><span>⚙</span> My plan & data</button>
+    </nav>
+    <div class="sidebar-foot"><div class="sidebar-note"><span class="signal"></span> A little better every day.<p>Consistency beats intensity.</p></div><span>LOCAL-FIRST • PRIVATE ON THIS DEVICE</span></div>
+  </aside>
+  <div class="main-area">
+    <header class="topbar"><div class="breadcrumb"><span>MY FITNESS</span><span>/</span><strong id="page-name">Overview</strong></div><div class="top-right"><span id="today-label"></span><span class="avatar" aria-label="Personal profile">S</span></div></header>
+    <main id="app" tabindex="-1"></main>
+    <footer class="footer">LeanTrack · Your progress is yours. Data stays in this browser unless you export it.</footer>
+  </div>
+</div>
+<div id="toast" role="status" aria-live="polite"></div>
+<script src="app.js" defer></script>
+</body>
+</html>
